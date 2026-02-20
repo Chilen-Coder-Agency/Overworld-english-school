@@ -259,7 +259,7 @@ export default function App() {
             >
               <h3 className="text-xl font-bold mb-2">Essencial</h3>
               <div className="mb-6">
-                <span className="text-4xl font-black text-oneworld-navy">1.000</span>
+                <span className="text-4xl font-black text-oneworld-navy">349</span>
                 <span className="text-slate-500 font-bold ml-1">MT/mês</span>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
@@ -291,9 +291,9 @@ export default function App() {
               className={`p-8 rounded-[2rem] bg-oneworld-navy text-white flex flex-col shadow-2xl relative overflow-hidden transition-all ${formSubmitted ? 'ring-4 ring-oneworld-red' : ''}`}
             >
               <div className="absolute top-4 right-4 bg-oneworld-red text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Popular</div>
-              <h3 className="text-xl font-bold mb-2">Intensivo</h3>
+              <h3 className="text-xl font-bold mb-2">Plus</h3>
               <div className="mb-6">
-                <span className="text-4xl font-black">1.800</span>
+                <span className="text-4xl font-black">1 000</span>
                 <span className="text-white/70 font-bold ml-1">MT/mês</span>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
@@ -303,19 +303,19 @@ export default function App() {
                 </li>
                 <li className="flex items-center gap-2 text-white/90">
                   <CheckCircle className="text-oneworld-red w-5 h-5 shrink-0" />
-                  <span>Clube de conversação</span>
+                  <span>Acesso ao grupo de estudos</span>
                 </li>
                 <li className="flex items-center gap-2 text-white/90">
                   <CheckCircle className="text-oneworld-red w-5 h-5 shrink-0" />
-                  <span>Suporte prioritário</span>
+                  <span>Plano de estudos individualizado</span>
                 </li>
                 <li className="flex items-center gap-2 text-white/90">
                   <CheckCircle className="text-oneworld-red w-5 h-5 shrink-0" />
-                  <span>Certificado de conclusão</span>
+                  <span>Material didático incluso</span>
                 </li>
               </ul>
               <button 
-                onClick={() => handleSelectPlan('Intensivo')} 
+                onClick={() => handleSelectPlan('Plus')} 
                 className={`w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 ${formSubmitted ? 'bg-whatsapp-green text-white shadow-lg' : 'bg-oneworld-red text-white hover:bg-oneworld-red/90'}`}
               >
                 {formSubmitted && <MessageSquare className="w-5 h-5" />}
@@ -328,27 +328,31 @@ export default function App() {
               whileHover={{ y: -10 }}
               className={`p-8 rounded-[2rem] bg-slate-50 border-2 flex flex-col transition-all ${formSubmitted ? 'border-oneworld-red shadow-xl' : 'border-slate-100'}`}
             >
-              <h3 className="text-xl font-bold mb-2">VIP Individual</h3>
+              <h3 className="text-xl font-bold mb-2">Premium (domicílio)</h3>
               <div className="mb-6">
-                <span className="text-4xl font-black text-oneworld-navy">3.000</span>
+                <span className="text-4xl font-black text-oneworld-navy">2 750</span>
                 <span className="text-slate-500 font-bold ml-1">MT/mês</span>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
                 <li className="flex items-center gap-2 text-slate-600">
                   <CheckCircle className="text-oneworld-red w-5 h-5 shrink-0" />
-                  <span>Aulas particulares 1-para-1</span>
+                  <span>3 aulas particulares por semana</span>
                 </li>
                 <li className="flex items-center gap-2 text-slate-600">
                   <CheckCircle className="text-oneworld-red w-5 h-5 shrink-0" />
-                  <span>Horários flexíveis</span>
+                  <span>Material didático incluso</span>
                 </li>
                 <li className="flex items-center gap-2 text-slate-600">
                   <CheckCircle className="text-oneworld-red w-5 h-5 shrink-0" />
-                  <span>Plano de estudos personalizado</span>
+                  <span>Plano de estudos individualizado</span>
+                  </li>
+                <li className="flex items-center gap-2 text-slate-600">
+                  <CheckCircle className="text-oneworld-red w-5 h-5 shrink-0" />
+                  <span>Grupo de estudo e interação com professores</span>
                 </li>
               </ul>
               <button 
-                onClick={() => handleSelectPlan('VIP Individual')} 
+                onClick={() => handleSelectPlan('Premium (domicílio)')} 
                 className={`w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 ${formSubmitted ? 'bg-whatsapp-green text-white shadow-lg' : 'border-2 border-oneworld-navy text-oneworld-navy hover:bg-oneworld-navy hover:text-white'}`}
               >
                 {formSubmitted && <MessageSquare className="w-5 h-5" />}
