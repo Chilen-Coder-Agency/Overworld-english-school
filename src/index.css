@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-oneworld-navy: #002B5B;
+  --color-oneworld-red: #D0103A;
+  --color-whatsapp-green: #25D366;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-oneworld-navy bg-slate-50;
+  }
+}
