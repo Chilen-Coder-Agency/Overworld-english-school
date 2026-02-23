@@ -36,7 +36,7 @@ export default function App() {
     const { nome, idade, nivel } = formData;
     const message = `Olá! Meu nome é ${nome}, tenho ${idade} anos e meu nível é ${nivel}. Escolhi o plano *${planName}* e quero saber mais sobre o curso Oneworld English.`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/258872201674?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/258840647264?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -328,7 +328,7 @@ export default function App() {
               whileHover={{ y: -10 }}
               className={`p-8 rounded-[2rem] bg-slate-50 border-2 flex flex-col transition-all ${formSubmitted ? 'border-oneworld-red shadow-xl' : 'border-slate-100'}`}
             >
-              <h3 className="text-xl font-bold mb-2">Premium (domicílio)</h3>
+              <h3 className="text-xl font-bold mb-2">Premium (anual)</h3>
               <div className="mb-6">
                 <span className="text-4xl font-black text-oneworld-navy">2 750</span>
                 <span className="text-slate-500 font-bold ml-1">MT/mês</span>
