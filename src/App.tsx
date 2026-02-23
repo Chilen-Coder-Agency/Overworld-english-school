@@ -331,7 +331,7 @@ export default function App() {
               <h3 className="text-xl font-bold mb-2">Premium (anual)</h3>
               <div className="mb-6">
                 <span className="text-4xl font-black text-oneworld-navy">2 750</span>
-                <span className="text-slate-500 font-bold ml-1">MT/mês</span>
+                <span className="text-slate-500 font-bold ml-1">MT/ano</span>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
                 <li className="flex items-center gap-2 text-slate-600">
